@@ -17,7 +17,7 @@ get_header();
                     while( have_posts() ) {
                         the_post();
                         $link = get_the_permalink();
-                        echo "<a href='{$link}'>". get_the_title()."</a>";
+                        the_title();
                         the_content();
                         echo '<hr/>';
                     }
